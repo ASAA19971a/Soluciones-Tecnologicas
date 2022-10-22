@@ -31,26 +31,538 @@
       content="Servicio Técnico, venta de Accesorios y variedades"
     />
     <meta name="og:image" content="build/img/Portada.png" />
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Estilos -->
     <link rel="stylesheet" href="build/css/app.css" />
 
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="build/img/Portada.png"
+      href="build/img/logoSolucionesTecnologicas.png"
       type="image/x-icon"
     />
-    <link rel="icon" href="build/img/Portada.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="build/img/logoSolucionesTecnologicas.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
+    <header class="header">
+      <div class="nav">
+        <div class="logo">
+          <img
+            src="build/img/logoSI.svg"
+            alt="Logo ASAA Soluciones Informáticas"
+          />
+        </div>
+        <div class="contenedorMenu">
+          <div class="btnMovil">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="menu">
+            <ul>
+              <a href="index.html" class="item"> <li>Inicio</li> </a>
+              <a href="#servicios" class="item"> <li>Servicios</li> </a>
+              <a href="#productos" class="item"> <li>Productos</li> </a>
+              <a href="#contacto" class="item"> <li>Contacto</li> </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="contenido">
+        <div class="titulo">
+          <h1>Asaa</h1>
+          <p>Soluciones Informáticas</p>
+        </div>
+        <div class="descripcion">
+          <p>
+            Promocionar y difundir nuestros servicios tecnológicos, brindando la
+            solución más eficaz y óptima, a problemas tecnológicos a nivel
+            nacional.
+          </p>
+          <h3>Nos seguimos innovando por ti!</h3>
+        </div>
+      </div>
+      <div class="flechas">
+        <i class="fa-solid fa-chevron-up"></i>
+        <i class="fa-solid fa-chevron-up"></i>
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </header>
+    <div class="servicios seccion" id="servicios">
+      <div class="titulo">
+        <h2>Nuestros servicios</h2>
+        <p>Conozca los servicios que ofrecemos.</p>
+        <hr />
+      </div>
+      <div class="contenedorServicios">
+        <div class="servicio">
+          <div class="icono"><i class="fa-solid fa-laptop"></i></div>
+          <div class="titulo">Mejora de rendimiento</div>
+          <div class="descripcion">
+            Realizamos una actualizacion de software para mejorar el rendimiento
+            de tu computador.
+          </div>
+
+          <a href="https://wa.link/lizb7n" target="_blank" class="btnInfo">
+            Mas Información</a
+          >
+        </div>
+        <div class="servicio">
+          <div class="icono">
+            <i class="fa-regular fa-folder-arrow-down"></i>
+          </div>
+          <div class="titulo">Instalacion de Programas</div>
+          <div class="descripcion">
+            Antivirus, Office, Paquete Adobe Edition, Juegos.
+          </div>
+          <a href="https://wa.link/lizb7n" target="_blank" class="btnInfo">
+            Mas Información</a
+          >
+        </div>
+        <div class="servicio">
+          <div class="icono">
+            <i class="fa-sharp fa-solid fa-floppy-disk-circle-arrow-right"></i>
+          </div>
+          <div class="titulo">Formateo y Respaldo</div>
+          <div class="descripcion">
+            Realizamos formateo de tu computador respaldando tu informacion como
+            archivos, fotos, programas.
+          </div>
+          <a href="https://wa.link/lizb7n" target="_blank" class="btnInfo">
+            Mas Información</a
+          >
+        </div>
+        <div class="servicio">
+          <div class="icono">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="titulo">Hadware</div>
+          <div class="descripcion">
+            Cambio de partes de tu computador por daño o mejora.
+          </div>
+          <a href="https://wa.link/lizb7n" target="_blank" class="btnInfo">
+            Mas Información</a
+          >
+        </div>
+        <div class="servicio">
+          <div class="icono"><i class="fa-duotone fa-browser"></i></div>
+          <div class="titulo">Diseño Web</div>
+          <div class="descripcion">
+            Creación y desarrollo de Páginas web para tu marca o negocio.
+          </div>
+          <a href="https://wa.link/lizb7n" target="_blank" class="btnInfo">
+            Mas Información</a
+          >
+        </div>
+        <div class="servicio">
+          <div class="icono"><i class="fa-solid fa-desktop"></i></div>
+          <div class="titulo">Mantenimiento y Limpieza</div>
+          <div class="descripcion">
+            Mantenimiento correctivo y preventivo para tu PC o Laptop, incluye
+            cambio de pasta termica y limpieza con aire comprimido.
+          </div>
+          <a href="https://wa.link/lizb7n" target="_blank" class="btnInfo">
+            Mas Información</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="seccion productos" id="productos">
+      <div class="titulo">
+        <h2>Productos</h2>
+        <hr />
+        <p>Contamos con un stock limitado de productos.</p>
+      </div>
+      <div class="contenedorProductos">
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/manito.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/manito.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/manito.png"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Soporte tipo Manito</h3>
+              <p>Soporte para celular</p>
+            </div>
+          </div>
+        </div>
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/auriculares.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/auriculares.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/auriculares.png"
+              alt="imagen"
+            />
+          </picture>
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Auriculares HS330</h3>
+              <p>Auriculares color negro y blanco</p>
+            </div>
+          </div>
+        </div>
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/spinner.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/spinner.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/spinner.png"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Spinner</h3>
+              <p>Spinner plastico varios colores</p>
+            </div>
+          </div>
+        </div>
+        <div class="producto">
+          <picture>
+            <source srcset="build/img/productos/mouse.avif" type="image/avif" />
+            <source srcset="build/img/productos/mouse.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="build/img/productos/mouse.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Mouse con Cable</h3>
+              <p>Mouse luminoso compatible con Windows,MAC, Linux.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/regleta.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/regleta.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/regleta.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Regleta USB</h3>
+              <p>Regleta USB 4 puertos</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/cepillo.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/cepillo.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/cepillo.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Cepillo Con Espejo</h3>
+              <p>Cepillo con espejo color rosado para niña.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/papel_brillante.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/papel_brillante.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/papel_brillante.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Papel Brillante A5</h3>
+              <p>Papel tamaño A5.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source srcset="build/img/productos/hojas.avif" type="image/avif" />
+            <source srcset="build/img/productos/hojas.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="build/img/productos/hojas.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Hojas A4</h3>
+              <p>Paquete 25 Hojas tamaño A4, cuadros y lineas.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/lineasycuadros_a5.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/lineasycuadros_a5.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/lineasycuadros_a5.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Hojas de 4 lineas</h3>
+              <p>Paquete de 50 hojas tmaño A5.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/cartulina.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/cartulina.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/cartulina.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Cartulinas A4</h3>
+              <p>Cartulinas de colores, blancas, esmaltadas.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/Esferos.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/Esferos.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/Esferos.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Esferos BIC</h3>
+              <p>Esferos punta fina, colores negro, azul y rojo.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/lapices.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/lapices.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/lapices.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Lápices HB</h3>
+              <p>Lápices HB</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/cables_usb.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/cables_usb.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/cables_usb.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Cables USB</h3>
+              <p>Cables USB de tipo C, diferentes colores.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+        <!-- Inicio Producto -->
+        <div class="producto">
+          <picture>
+            <source
+              srcset="build/img/productos/audifonos.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="build/img/productos/audifonos.webp"
+              type="image/webp"
+            />
+            <img
+              loading="lazy"
+              src="build/img/productos/audifonos.jpg"
+              alt="imagen"
+            />
+          </picture>
+
+          <div class="overlay">
+            <div class="tituloOverlay">
+              <h3>Audifonos</h3>
+              <p>Audifonos 3.5mm diferentes colores.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Producto -->
+      </div>
+    </div>
+
+    <div class="contacto seccion" id="contacto">
+      <div class="titulo">
+        <h2>Contacto</h2>
+        <hr />
+        <p>Comuniquese mediante nuestros canales de atención.</p>
+      </div>
+      <div class="canales">
+        <div class="canal">
+          <div class="icono"><i class="fa-regular fa-location-dot"></i></div>
+          <div class="informacion">
+            Av. Mariscal Sucre S8-376 y Ferrusola <br />
+            Quito, Ecuador
+          </div>
+        </div>
+        <div class="canal">
+          <div class="icono"><i class="fa-solid fa-envelope"></i></div>
+          <div class="informacion">abelcoc06@gmail.com</div>
+        </div>
+        <div class="canal">
+          <div class="icono"><i class="fa-solid fa-phone"></i></div>
+          <div class="informacion">0999200394 - 0984906571</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        ©ASAA <br />
+        Creado por Abel Acosta. <span>Derechos Reservados</span>
+      </p>
+    </footer>
+    <!-- Font Awesome -->
+    <script src="build/js/iconos.js"></script>
+    <!-- APP JS -->
     <script src="build/js/app.js"></script>
-    <!-- jquery -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous">
-  </script> -->
   </body>
 </html>

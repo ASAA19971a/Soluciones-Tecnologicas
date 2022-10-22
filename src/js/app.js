@@ -5,3 +5,10 @@ window.addEventListener("load", () => {
   contenedorLoader.style.visibility = "hidden";
   // console.log("preloader finalizado");
 });
+
+const btnmovil = document.querySelector(".btnMovil");
+const menu = document.querySelector(".menu");
+
+btnmovil.addEventListener("click", () => {
+  menu.classList.toggle("menuMovil");
+});

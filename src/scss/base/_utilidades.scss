@@ -1,19 +1,32 @@
 @use "variables" as v;
 
 .seccion {
-  margin-top: calc(v.$separacion / 2);
   margin-bottom: calc(v.$separacion / 2);
+  margin-top: calc(v.$separacion / 2);
+  .titulo {
+    text-align: center;
+    padding: 1rem;
+    h2 {
+      margin: 0;
+      padding-bottom: 0.5rem;
+      text-align: center;
+      color: v.$blanco;
+    }
+    hr {
+      width: 25%;
+      height: 2px;
+      border: none;
+      background: v.$primario;
+    }
+    p {
+      color: v.$blanco;
+    }
+  }
 }
+
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem;
-  border-radius: 1.6rem;
-  cursor: pointer;
 }
 
 // Fondos y textos
@@ -26,9 +39,4 @@
 }
 .txt-anaranjado {
   color: v.$anaranjado;
-}
-
-.titulo {
-  padding: 2rem;
-  text-align: center;
 }

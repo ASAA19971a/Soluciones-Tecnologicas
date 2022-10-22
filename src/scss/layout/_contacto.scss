@@ -1,0 +1,36 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contacto {
+  margin: 0 auto;
+  background-color: v.$oscuro;
+}
+.canales {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .canal {
+    padding: 2rem;
+    color: v.$blanco;
+    text-align: center;
+    .icono {
+      font-size: 3rem;
+    }
+  }
+}
+
+.footer {
+  padding: 2rem;
+  margin: 1px auto 0 auto;
+  background: v.$oscuro;
+
+  color: v.$blanco;
+  text-align: center;
+  font-weight: 700;
+  span {
+    font-weight: normal;
+  }
+}

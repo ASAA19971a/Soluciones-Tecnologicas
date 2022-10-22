@@ -1,0 +1,56 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.servicios {
+  margin: 0;
+  padding: 2rem;
+  background: v.$oscuro;
+  .contenedorServicios {
+    @include m.grid(1, 2rem);
+    @include m.telefono {
+      @include m.grid(3, 1rem);
+    }
+    .servicio {
+      padding: 1rem;
+      background-color: transparent;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.5);
+      .icono {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: v.$secundario;
+        color: v.$blanco;
+      }
+      .titulo {
+        text-align: center;
+        color: v.$secundario;
+        font-weight: 700;
+      }
+      .descripcion {
+        text-align: center;
+        color: v.$blanco;
+      }
+      .btnInfo {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: v.$oscuro;
+        background-color: v.$primario;
+        border-radius: 1.5rem;
+        &:hover {
+          background-color: v.$azulOscuro;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
