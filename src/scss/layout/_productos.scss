@@ -32,6 +32,9 @@
           padding: 1rem;
         }
       }
+      &:hover {
+        cursor: pointer;
+      }
       &:hover .overlay {
         bottom: 0px;
       }
